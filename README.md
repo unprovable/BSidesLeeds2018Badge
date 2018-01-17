@@ -29,7 +29,8 @@ There are some given firmware files, ending in `.bin` in the repo, but we'll giv
 
 First download and install OpenOCD - download and instruction can be found here: https://sourceforge.net/projects/openocd/files/openocd/0.10.0/
 
-Now that this is installed, `cd` to the directory where `firmware.bin` is located. Connect the ST-Link V2 programmer to a USB port, and use the following command 
+Now that this is installed, `cd` to the directory where `firmware.bin` is located. Connect the ST-Link V2 programmer to a USB port, and use the following command;
+
 ```sudo openocd -f target/stm32f1x.cfg -f interface/stlink-v2.cfg -c "init" -c "reset halt" -c "stm32f1x unlock 0" -c "flash write_image erase unlock firmware.bin 0x08000000" -c "exit" ```
 
 **NB** - make sure to change `firmware.bin` for the name of the `.bin` file you want to flash. 
