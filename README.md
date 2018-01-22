@@ -8,7 +8,7 @@ The badge requires two things:
 1. STM32F103 development board - a 'blue pill' dev board for the ARM-based STM32F103 chip
 1. A USB to UART board using the CP2102 IC
 1. 2x 20x1 pin female header for 2.54mm pitch pins
-1. 1x 6x1 pin femal header for 2.54mm pitch pins
+1. 1x 6x1 pin female header for 2.54mm pitch pins
 1. 1x ST-Link v2 programmer
 
 ## Setup
